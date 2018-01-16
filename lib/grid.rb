@@ -1,10 +1,16 @@
 # Represents the grid of the game
 class Grid
+  attr_reader :data
 
-  attr_reader :grid
-  def initialize
-    @grid = [[0, 0, 0],
-             [0, 1, 0],
-             [0, 0, 0]]
+  def self.default
+    [
+        ['_', 'x', '_'],
+        ['_', 'x', '_'],
+        ['_', 'x', '_']
+    ]
+  end
+
+  def initialize(x:, y:)
+
   end
 end
